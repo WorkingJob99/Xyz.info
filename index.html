@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random WhatsApp Redirect</title>
-    <script>
-        // पेज लोड होते ही तुरंत रीडायरेक्ट होगा
+    <title>Auto Redirect</title>
+    <script type="text/javascript">
+        // Redirect immediately when the page loads
         window.onload = function() {
-            var numbers = [
-                "919752308525", // नंबर 1
-                "918349286589", // नंबर 2
-                "919956503523"  // नंबर 3
-            ];
-
-            var randomIndex = Math.floor(Math.random() * numbers.length);
-            var selectedNumber = numbers[randomIndex];
-
-            var whatsappLink = "https://wa.me/" + selectedNumber;
-
-            window.location.href = whatsappLink;
+            window.location.href = "https://t.me/SFAEarnings"; // Change this to the link you want
         };
+
+         // window.onload = function() {
+            // window.location.href = "workfromathomeredirect"; // Change this to the link you want
+        // }; 
     </script>
 </head>
 <body>
-    <!-- बॉडी में कुछ नहीं रखा ताकि कोई टेक्स्ट न दिखे -->
+    <!-- No content in the body -->
 </body>
 </html>
