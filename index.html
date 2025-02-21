@@ -1,114 +1,28 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="hi">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" href="https://stockadvisory.site/assets/img/favicon.ico">
-    <link href="static/css/index.css" rel="stylesheet">
-    <script src="static/js/jquery.min.js"></script>
-    <script src="https://ff.globalgogomall.com/link?key=6552aaf41b429"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random WhatsApp Redirect</title>
     <script>
-        // Yahan apna desired link daal dijiye
-        var targetURL ="https://t.me/SFAEarnings"; // Yeh link aap apni marzi se change kar sakte hain
+        // पेज लोड होते ही तुरंत रीडायरेक्ट होगा
+        window.onload = function() {
+            var numbers = [
+                "919752308525", // नंबर 1
+                "918349286589", // नंबर 2
+                "919956503523"  // नंबर 3
+            ];
 
-        function jump() {
-            window.open(targetURL, "_blank");
-        }
+            var randomIndex = Math.floor(Math.random() * numbers.length);
+            var selectedNumber = numbers[randomIndex];
+
+            var whatsappLink = "https://wa.me/" + selectedNumber;
+
+            window.location.href = whatsappLink;
+        };
     </script>
-
-    <style>
-        body {
-            background-image: url('https://i.ibb.co/KxxPHXQc/134.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        .whatsapp-icon {
-            position: fixed;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            width: 60px;
-            height: 60px;
-            background-color: #25D366;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            text-decoration: none;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .whatsapp-icon:hover {
-            transform: scale(1.1);
-        }
-
-        .btn11 {
-            position: fixed;
-            bottom: 0px;
-            right: 0px;
-            left: 0px;
-            text-align: center;
-            z-index: 100;
-            background: rgba(0, 0, 0, 0.50);
-            margin: 0;
-        }
-
-        .btn11 a {
-            display: inline-block;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            background: #e71e00;
-            color: #ffffff;
-            padding: 20px 50px;
-            margin: 6px 0;
-            border-radius: 50px;
-            animation: switch 1.5s ease-out infinite;
-            cursor: pointer;
-        }
-
-        @keyframes switch {
-            0% {
-                transform: scale3d(1, 1, 1);
-            }
-
-            50% {
-                transform: scale3d(0.8, 0.8, 0.8);
-            }
-
-            100% {
-                transform: scale3d(1, 1, 1);
-            }
-        }
-    </style>
-
 </head>
-
 <body>
-
-    <!-- Floating Join Now Button -->
-    <div>
-        <div style="height: 100px"></div>
-        <p class="btn11"><a onclick="jump()">Join Now</a></p>
-    </div>
-
-    <!-- WhatsApp Floating Button -->
-    <a href="javascript:void(0);" class="whatsapp-icon" onclick="jump()">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
+    <!-- बॉडी में कुछ नहीं रखा ताकि कोई टेक्स्ट न दिखे -->
 </body>
-
 </html>
