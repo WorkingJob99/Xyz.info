@@ -1,21 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Redirect</title>
-    <script type="text/javascript">
-        // Redirect immediately when the page loads
-        window.onload = function() {
-            window.location.href = "https://t.me/SFAEarnings"; // Change this to the link you want
-        };
+    <title>WhatsApp Redirect</title>
+    <script>
+        function redirectToWhatsApp() {
+            var numbers = [
+                "919177001340",
+                "917796112879",
+                "919875471170",
+                "917501138753",
+                "917500829067",
+                "916006802031",
+                "918872825427",
+                "918514823057",
+                "447391881234",
+                "919505652109",
+                "447474543761",
+                "917282074419",
+                "447887155782",
+                "447308317354",
+                "918755935288",
+                "447308904718",
+                "919236315948",
+                "919848066741",
+                "919170753652",
+                "917384849546",
+                "919848736295",
+                "919840092992",
+                "917440657716",
+                "916380706084",
+                "919660531082",
+                "919639916834",
+                "919603734724"
+            ];
 
-         // window.onload = function() {
-            // window.location.href = "workfromathomeredirect"; // Change this to the link you want
-        // }; 
+            var randomIndex = Math.floor(Math.random() * numbers.length);
+            var selectedNumber = numbers[randomIndex];
+            var whatsappLink = "https://wa.me/" + selectedNumber;
+
+            window.location.href = whatsappLink;
+        }
     </script>
 </head>
-<body>
-    <!-- No content in the body -->
+<body onload="redirectToWhatsApp()">
 </body>
 </html>
