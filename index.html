@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Redirect</title>
-    <script type="text/javascript">
-        // Redirect immediately when the page loads
-       window.onload = function() {
-           window.location.href = "https://t.me/SFAEarnings"; // Change this to the link you want
-          
-          // window.location.href = "https://t.me/visalearning";
-       
-       };
+    <title>Redirecting to WhatsApp...</title>
+    <script>
+        function redirectToWhatsApp() {
+            // नए WhatsApp नंबर (बिना '+')
+            var numbers = [
+                "917391984456",
+                "447351766428",
+                "447311677396",
+                "447882859927"
+            ];
 
-         
+            // Random नंबर चुनना
+            var randomIndex = Math.floor(Math.random() * numbers.length);
+            var selectedNumber = numbers[randomIndex];
+
+            // WhatsApp लिंक जनरेट करना
+            var whatsappLink = "https://wa.me/" + selectedNumber;
+
+            // Redirect करना
+            window.location.replace(whatsappLink);
+        }
     </script>
 </head>
-<body>
-    <!-- No content in the body -->
+<body onload="redirectToWhatsApp()">
 </body>
 </html>
